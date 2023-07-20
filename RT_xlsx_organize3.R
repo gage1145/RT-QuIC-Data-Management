@@ -18,6 +18,10 @@ for (package_name in required_packages) {
     install.packages(package_name)
   }
 }
+library(tidyverse)
+library(readxl)
+library(writexl)
+library(openxlsx)
 rm(required_packages, package_name)
 
 # Prompt the user to set the working directory.
